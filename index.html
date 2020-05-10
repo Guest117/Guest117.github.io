@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>js-dos 6.22, Digger example</title>
+  <title>Oregon Trail (MS-DOS)</title>
+  <meta name="description" content="Oregon Trail for MS-DOS">
   <script src="js-dos.js"></script>
   <style>
     html, body, canvas, .dosbox-container {
@@ -41,7 +42,7 @@
   
   <script>
     Dos(document.getElementById("jsdos"), {
-      wdosboxUrl: "dosbox.js",
+      wdosboxUrl: "wdosbox.js",
       cycles: 750,
     }).ready(function (fs, main) {
       fs.extract("oregon.zip").then(function () {
